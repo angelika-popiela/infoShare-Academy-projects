@@ -3,7 +3,9 @@ Data analysis with Python and popular libraries.
 Data source: healthcare-dataset-stroke-data.csv 
 
 
+
 CONCLUSIONS: Stroke Risk Analysis 
+
 
 Employment type
 
@@ -30,6 +32,7 @@ Average glucose level
 Strongest correlation with stroke.
 Diabetic patients are high-risk: 100/981 experienced a stroke.
 Stroke incidence increases mainly with age, especially among diabetics.
+
 
 Overall conclusion
 
