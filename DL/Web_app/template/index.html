@@ -1,0 +1,92 @@
+<!---Initialize Home Page--->
+<!DOCTYPE >
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <!---Initialize structure of Title and picture--->
+    <body>    
+        <head>
+            <style>
+               img {
+                width: 100%;
+                max-height:300px;
+                max-width: 1500px;
+                }
+            </style>
+        </head>
+            <img class="center-fit" src='static/img/3_EDIT.png'>
+    </div>
+        </b>
+            </b>
+            <div id = "menu-outer">
+                <p class = "Note"><b>Useful websites</b></p>
+                <div class = "table">
+                    <ul id = "horizontal-list">
+                        <li><a href = "https://www.weather.gov/" target="_blank" class = "link"><span class = "titleLink">Weather forecasting</span></a></li>
+                        <li><a href = "https://www.eia.gov/petroleum/gasdiesel/" target="_blank" class = "link"><span class = "titleLink">Fuel price</span></a></li>
+                        <li><a href = "https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm" target="_blank" class = "link"><span class = "titleLink">Consumer Price Index</span></a></li>
+                        <li><a href = "https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm" target="_blank" class = "link"><span class = "titleLink">Civilian unemployment rate</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        <!---Containerize main page for styling--->
+        <div class = "page">
+            <!---Containerize paragraph and form for styling--->
+                <div class = "intro">
+                    <b>
+                        <p class = "Note1"><b>Note: Enter numeric values only</b></p>
+                    </b>
+                </div>
+                <div class="form-row">
+                    <div class="editor-cell">
+                <!---Initialize form structure and inputs, set method to "POST"--->
+                        <form name="form", method="POST" method = "post" >
+                            <input type="number" id="Store" value="{{ request.form['Store'] }}" name="Store" placeholder="Store number 1-45" required min="1" max="45"/>
+                            <br>
+                            <br>
+                            <input type="number" id="Weekly_Sales" value="{{ request.form['Weekly_Sales'] }}" name="Weekly_Sales" placeholder="Weekly Sales" required />
+                            <br>
+                            <br>
+                            <label for="Holiday_Flag">Holiday: </p> 
+                            <input type="radio" id="Holiday_Flag" name="Holiday_Flag" value=1  required> <label for="Holiday_Flag">Yes</label> 
+                            <input type="radio" id="Holiday_Flag" name="Holiday_Flag" value=0> <label for="Holiday_Flag">No</label>
+                            <br>
+                            <br>
+                            <input type="number" step="0.1" id="Temperature" value="{{ request.form['Temperature'] }}" name="Temperature" placeholder="Temperature °F" required min="-128" max="134"/> 
+                            <br>
+                            <br>
+                            <input type="number" step="0.1" id="Fuel_price" value="{{ request.form['Fuel_price'] }}" name="Fuel_price" placeholder="Fuel price $" required/> 
+                            <br>
+                            <br>
+                            <input id="CPI" step="0.1" type="number" name="CPI"  value="{{ request.form['CPI'] }}" placeholder="Consumer Price Index" required/>
+                            <br>
+                            <br>
+                            <input id="Unemployment" step="0.1" type="number" name="Unemployment"  value="{{ request.form['Unemployment'] }}" placeholder="Unemployment rate" required/>
+                            <br>
+                            <br> 
+                            <label for="DATE">Prediction Week:</p>
+                            <input id="yyyy" input type="hidden" name="yyyy"  value="2013" placeholder="Year" />
+                            <input id="mm" input type="hidden" name="mm" placeholder="Month" value="11" /> 
+                            <input id="dd" input type="hidden" name="dd"  placeholder="Day" value="10" />
+                            <input type="date" id="week_absolute" value="{{ request.form['week_absolute'] }}" placeholder="MM/DD/YYYY" name="week_absolute" min="2012-12-31" max="2013-01-13" required />
+                            <br>
+                            <br>
+                            <button type="submit" class="btn">Predict</button>
+                         </div>
+                        </form>
+                    <br> 
+                <!---Set placeholder for prediction output--->
+                <div class ="pred">
+                    <p class = "result"><b>{{ prediction_text }}</b></p>
+                </div>
+            </div>
+        </div>
+        <head>
+            <p>
+            <div class = "picture" style="position: absolute; bottom: 0; left: 0; width: 200px; text-align:right;"></div>
+               <li><a href="https://corporate.walmart.com/photos/walmart-logo-tagline"> Picture source</a> </li> 
+            </p>
+    </body>
+</html>
