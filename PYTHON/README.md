@@ -1,3 +1,3 @@
-Data analysis with Python and popular library. 
+Data analysis with Python and popular libraries. 
 
 Data source: healthcare-dataset-stroke-data.xls 
