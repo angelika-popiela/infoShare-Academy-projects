@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartAttackPredictor</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <span style="font-family: Cambria">
+    <div id="TOP"><br></div>
+    <div id="NAGLOWEK"><br><span style="font-size: xx-large"><b>Heart Failure Prediction Application</b></span></div>
+    <div class="container" id="MENU">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h1>User's MENU</h1>
+            <b>Age [years]</b><br>
+                <input id="first" name="age" type="number">
+            <br><br>
+            <b>Anaemia</b><br>
+                <select id="second" name="anaemia" required="required">
+                    <option value=1>Yes</option>
+                    <option selected value=0>No</option>
+                </select>
+            <br><br>
+            <b>Creatinine Phosphokinase</b><br>
+                <input id="third" name="creatinine_phosphokinase" required="required">
+            <br><br>
+            <b>Diabetes</b><br>
+                <select id="fourth" name="diabetes" required="required">
+                    <option value=1>Yes</option>
+                    <option selected value=0>No</option>
+                </select>
+            <br><br>
+            <b>Ejection Fraction</b><br>
+                <input id="fifth" name="ejection_fraction" required="required">
+            <br><br>
+            <b>High Blood Pressure</b><br>
+                <select id="sixth" name="high_blood_pressure" required="required">
+                    <option value=1>Yes</option>
+                    <option selected value=0>No</option>
+                </select>
+            <br><br>
+            <b>Platelets</b><br>
+                <input id="seventh" name="platelets" required="required">
+            <br><br>
+            <b>Serum Creatinine</b><br>
+                <input id="eighth" name="serum_creatinine" required="required">
+            <br><br>
+            <b>Serum Sodium</b><br>
+                <input id="ninth" name="serum_sodium" required="required">
+            <br><br>
+            <b>Gender</b><br>
+                <select id="tenth" name="sex" required="required">
+                    <option value=1>Male</option>
+                    <option selected value=0>Female</option>
+                </select>
+            <br><br>
+            <b>Smoking</b><br>
+                <select id="eleventh" name="smoking" required="required">
+                    <option value=1>Yes</option>
+                    <option selected value=0>No</option>
+                </select>
+
+            <br><br><br><br><button id="sub" type="submit ">Predict</button><br>
+            <br>
+    </div>
+    <div class= "container" id="TRESC"><h1>Result</h1>
+        <br><h2>{{ prediction_text }}</h2><br>
+        <br>{{ entrance_for_user }}<br><br>
+        {{ first }}<br> 
+        {{ second }}<br> 
+        {{ third }}<br> 
+        {{ fourth }}<br> 
+        {{ fifth }}<br>
+        {{ sixth }}<br> 
+        {{ seventh }}<br> 
+        {{ eighth }}<br>
+        {{ ninth }}<br> 
+        {{ tenth }}<br> 
+        {{ eleventh }}<br>
+        <br> 
+    </div>
+    <div id="STOPKA"><br>World Data Analysis<br>J. Krawczyk 05.2022</div> 
+    </span>   
+</body>
+</html>
