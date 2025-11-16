@@ -1,0 +1,328 @@
+* 
+{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+body {
+    
+    /* height: 50vh;
+    height: 95vh; */
+    width: 1200px;
+    max-height: 696px; 
+    background-color: white;
+    background-size: cover;
+    display: table-row-group;
+}
+
+form {
+    display: flex; /* 2. display flex to the rescue */
+    flex-direction: row;
+  }
+  
+input {
+    display: inline;
+    box-sizing: border-box;
+    height: 20px; /* 1. oh noes, my inputs are styled as block... */
+  }
+
+
+h1 {
+    text-align: center;
+    font-size: 350%;
+}
+button {
+    font-weight: bold;
+    background-color: orange;
+    padding: 8px 20px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius:3px;
+    color: black;
+    border-color: black;
+    border-style: ridge;
+}
+input[type="number"] {
+    display: inline;
+    }
+
+
+/*Margin, layout and design of paragraphs and structures*/
+/* .para {
+    text-align:center; */
+/* } */
+.result {
+    font-weight: bold;
+    background-color: orange;
+    padding: 8px 20px;
+    display: inline;
+    text-decoration: none;
+    border-radius:3px;
+    color: black;
+    border-color: black;
+    font-family: Arial;
+    border-style: ridge;
+}
+.pred {
+    font-size: 23px;
+    text-align:center;
+}
+.intro {
+    font-size: 40px;
+}
+.Note1 {
+    text-align: center;
+    color: orange;
+    margin: 7px;
+    padding: 4px 5px;
+    font-size: 21px;
+    font-weight:normal;
+}
+/*Layout and structure of form body in page*/
+div.container {
+        display: inline;
+        justify-content: space-around;
+    }
+
+
+/* }
+.push-right {
+    margin-left: auto; */
+         
+/* .center-fit {
+    display: table-row-group;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  } */
+
+div.page {
+    /* max-height: 768px; */
+    width: 1200px;
+    margin: 0px auto 0px auto;
+    display: inline;
+
+
+/*This section involves the design of the inputs in the form*/
+}
+input#Store {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    display: inline;
+}
+input#Weekly_Sales {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    display: inline;
+}
+input#Holiday_Flag {
+    width: 10px;
+    border: 1px solid #ddd;
+    height: 50px;
+    border-radius: 1px;
+    font-size: 20px;
+    outline: 0;
+    padding: 7px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#Temperature {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#Fuel_price {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#CPI {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#Unemployment {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#date {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+/* input#yyyy { */
+    /* width: 400px; */
+    /* font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3); */
+/* } */
+/* input#mm { */
+    /* width: 400px; */
+    /* font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+} */
+/* input#dd {
+    /* width: 400px; */
+    /* font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3); */
+/* } */ 
+input#week_absolute {
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+/* input#cluster_sklearn{
+    width: 400px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+} */
+.btn {
+    font-size: 22px;
+}
+/*Design of links/buttons*/
+a.link {
+    font-weight: bold;
+    background-color: orange;
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius:3px;
+    color: black;
+    border-color: black;
+    border-style: ridge; 
+    max-height: 768px;
+}
+
+/*Responsible for shadow backgrounds*/
+#menu-outer {
+    height: 300px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    margin: 1%;
+    border-radius: 20px;
+    border: 3px soid #D3D3D3;
+    max-height: 768px;
+    display: inline;
+}
+.Note {
+    text-align: center;
+    color: orange;
+    margin: 7px;
+    padding: 7px 0px;
+    font-size: 25px;
+}
+.table {
+    max-height: 768px;
+    display: table-row-group;   
+    margin: 0 auto;
+}
+
+
+ul#horizontal-list {
+    min-width: 696px;
+    max-width: 1366px;
+    list-style: none;
+}
+
+/*This section is concerned with the link layout*/
+a.link {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+ul#horizontal-list li {
+    display: inline;
+    max-width: 1366px;
+}
+
+div.title img {
+    display:inline;
+    vertical-align:center;
+}        
+
+div.title h1 {
+    display:inline;
+    vertical-align:middle;
+}
+div.picture {
+    font-size: 30px; 
+}
+
+/*Animation for links*/
+a:link {color: rgb(0, 113, 206)}
+a:visited {color:black}
+a:active {color:red}
+a:hover {font-size: 120%; color:black}
